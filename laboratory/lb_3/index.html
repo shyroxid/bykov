@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Youtube Clone</title>
+</head>
+<style>
+    
+    body {
+        margin: 0; 
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto 1fr; 
+        height: 100vh; 
+    }
+
+    .header {
+        
+        grid-column: 1;
+        z-index: 1; 
+    }
+
+    .main {
+        
+        grid-column: 1;
+        overflow-y: scroll;
+    }
+
+    .video-section {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 20px;
+        justify-content: flex-start; 
+        margin: 15px -28cm -24cm auto; 
+    }
+
+    .video-container {
+        box-sizing: border-box;
+        width: calc(20% - 20px); 
+        max-width: 300px; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    
+</style>
+
+
+<body>
+  <header class="header">
+    <div class="logo left">
+      <i id="menu" class="material-icons">menu</i>
+      <img src="https://www.freecodecamp.org/news/content/images/2022/01/yt-logo.png" alt="YouTube Logo" />
+    </div>
+
+    <div class="search center">
+      <form action="">
+        <input type="text" placeholder="Search" />
+        <button><i class="material-icons">search</i></button>
+      </form>
+      <i class="material-icons mic">mic</i>
+    </div>
+
+    <div class="icons right">
+      <i class="material-icons">videocam</i>
+      <i class="material-icons">apps</i>
+      <i class="material-icons">notifications</i>
+      <i class="material-icons display-this">account_circle</i>
+    </div>
+  </header>
+
+  <main>
+    <div class="side-bar">
+            <div class="nav">
+                <a href="#" class="nav-link active">
+                    <i class="material-icons">home</i>
+                    <span>Головна</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">local_fire_department</i>
+                    <span>У тренді</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">subscriptions</i>
+                    <span>Підписки</span>
+                </a>
+                <hr>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Бібліотека</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">history</i>
+                    <span>Історія перегляду</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Ваші відео</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">watch_later</i>
+                    <span>Дивитись пізніше</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Уподобані відео</span>
+                </a>
+            </div>     
+        </div>
+      
+   
+<div class="videos">
+    <section class="video-section">
+        <article class="video-container">
+            <a href="#" class="thumbnail">
+                <img class="thumbnail-image" src="https://i.ytimg.com/vi/n2iH17WbEVk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCNAH-OmdeXcRax6Ty_uieiUIfmmg" />
+            </a>
+            <div class="video-bottom-section">
+                <a href="">
+                    <img class="channel-icon" src="https://yt3.googleusercontent.com/ytc/AIf8zZSMNobgCLCeQ2OsHGg37Ffj4ba92MwS9pfpCi6rig=s176-c-k-c0x00ffffff-no-rj" />
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-tetle">The Day I Broke My Ass</a>
+                    <a href="#" class="video-channel-name">Markiplier</a>
+                    <div class="video-metadata">
+                        <span>8,4 млн. переглядів</span>
+                        •
+                        <span>1 рік тому</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+              <article class="video-container">
+            <a href="#" class="thumbnail">
+                <img class="thumbnail-image" src="https://i.ytimg.com/an_webp/JyD13ifbAN4/mqdefault_6s.webp?du=3000&sqp=CJaAvawG&rs=AOn4CLCNPqyJsDJS9T5IkxnXZfz7WjbXhA" />
+            </a>
+            <div class="video-bottom-section">
+                <a href="">
+                    <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AIf8zZRmZmc4QAbhHDafAtBtIfBRgrBRXrNUTuClDQ=s68-c-k-c0x00ffffff-no-rj" />
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-tetle">Повар спрашивает повара</a>
+                    <a href="#" class="video-channel-name">
+                      Kventinburatino</a>
+                    <div class="video-metadata">
+                        <span>19 млн. переглядів</span>
+                        •
+                        <span>15 років тому</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+       </article>
+              <article class="video-container">
+            <a href="#" class="thumbnail">
+                <img class="thumbnail-image" src="https://i.ytimg.com/vi/vU_reVl1Eno/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAr_IxoMB7LEoDXMdOlXltEHebd0g" />
+            </a>
+            <div class="video-bottom-section">
+                <a href="">
+                    <img class="channel-icon" src="https://yt3.ggpht.com/67jtCpgqyTvak3IFwRmcGAMUw3cfGyPtX5-gShXm-x1rISGqyLCsKjQYhU2dhAUFdn-EKAVS3Q=s68-c-k-c0x00ffffff-no-rj" />
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-tetle">Leon Kennedy Edits Saved On My Phone For Simps</a>
+                    <a href="#" class="video-channel-name">
+                      amexhxd</a>
+                    <div class="video-metadata">
+                        <span>361 тис. переглядів</span>
+                        •
+                        <span> 8 місяців тому</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+       </article>
+              <article class="video-container">
+            <a href="#" class="thumbnail">
+                <img class="thumbnail-image" src="https://i.ytimg.com/vi/6es9aXdvMV8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCYemUokMxd1jznEcSMyjBYkl0I7A" />
+            </a>
+            <div class="video-bottom-section">
+                <a href="">
+                    <img class="channel-icon" src="https://yt3.ggpht.com/kERX2St7Maj4-wSZqC4SZIlNH3yTNcCwBd-nT2dwdu43-bFLSWn80QAE_FtPrOpYUmVcOuyj=s68-c-k-c0x00ffffff-no-rj" />
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-tetle">Уэнсдей Аддамс! Экстремальное преображение комнаты подружек!</a>
+                    <a href="#" class="video-channel-name">Трум Трум</a>
+                    <div class="video-metadata">
+                        <span>3.8 млн переглядів</span>
+                        •
+                        <span>1 рік тому</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+       </article>
+              <article class="video-container">
+            <a href="#" class="thumbnail">
+                <img class="thumbnail-image" src="https://i.ytimg.com/vi/-CtuLgIOjGk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhMIFooZTAP&rs=AOn4CLCccua4Mxhctktd0ek2eGOeXDaIqg" />
+            </a>
+            <div class="video-bottom-section">
+                <a href="">
+                    <img class="channel-icon" src="https://yt3.ggpht.com/AGpXb8SHHkq9Y88T4P9t7019ltbymeP-MkEUysRUdCCOkrg1IzeIgJrcNJDYELf3nj8hoKN0=s68-c-k-c0x00ffffff-no-rj" />
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-tetle">ЛЕВ - ТАРО ПРОГНОЗ на ДЕКАБРЬ 2023 года (часть 1) от ANGELA PEARL</a>
+                    <a href="#" class="video-channel-name">Angela Pearl</a>
+                    <div class="video-metadata">
+                        <span>104 тис. переглядів</span>
+                        •
+                        <span>1 місяць тому</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+       </article>   
+             </div>
+            </div>
+          </div>
+        </article>
+    </section>
+</div>
+    <div class="content"></div>
+  </main>
+</body>
+</html>

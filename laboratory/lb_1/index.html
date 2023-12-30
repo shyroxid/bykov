@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=PT+Sans+Narrow&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Форма реєстрації</title>
+</head>
+<body>
+    <h1>Форма реєстрації</h1>
+    <form action="https://webhook.site/c5cf54aa-6533-4406-bddc-6257cf48412a" method="POST">
+        <div class="workplace">
+        <input type="text" id="first_name" name="first_name" required placeholder="Ім'я"><br>
+
+        <input type="text" id="last_name" name="last_name" required placeholder="Прізвище"><br>
+
+        <input type="email" id="email" name="email" required placeholder= "Адреса електроної пошти"><br>
+
+        <input type="password" id="password" name="password" required placeholder="Пароль"><br>
+
+        <input type="password" id="confirm_password" name="confirm_password" required placeholder="Підтвердження паролю"><br>
+
+        <input type="date" id="birthdate" name="birthdate" required placeholder = "Дата народження"><br>
+
+        <label>Стать:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Чоловік</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жінка</label><br>
+
+        <input type="submit" value="Відправити">
+    </div>
+    </form>
+</body>
+</html>

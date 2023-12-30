@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @keyframes spinAndZoom {
+            0%, 100% {
+              transform: rotate(0deg) scale(0);
+            }
+            50% {
+              transform: rotate(180deg) scale(1.5);
+            }
+            50%  {
+              transform: rotate(360deg) scale(3);
+            }
+            100% {
+              transform: rotate(540deg) scale(1.5);
+            }
+            100% {
+              transform: rotate(720deg) scale(0);
+            }
+          }
+
+      .animation-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      .pokemon-sprite {
+        animation: spinAndZoom 3s ease-in-out infinite;
+        transform-origin: center center;
+        z-index: 1;
+      }
+    </style>
+    <title>гспд шо це</title>
+  </head>
+  <body>
+    <div class="animation-container">
+      <img
+        src="https://r4.wallpaperflare.com/wallpaper/86/168/901/digital-digital-art-artwork-illustration-drawing-hd-wallpaper-d886ddd830307c18a0ac615e0872d4da.jpg"
+        alt="Background"
+        class="background-image"
+      />
+      <img
+        src="https://img.pokemondb.net/sprites/sword-shield/normal/drapion.png"
+        alt="Togekiss"
+        class="pokemon-sprite"
+      />
+    </div>
+  </body>
+</html>
