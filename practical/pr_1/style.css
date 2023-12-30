@@ -1,0 +1,66 @@
+*{
+    font-family: 'Bitter', serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+table th {
+    background-color:;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+}
+
+table td {
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+}
+
+table th,
+table td {
+    vertical-align: middle;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid#0C151C;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color:;
+}
+
+tr:nth-child(even) {
+    background-color: ;
+}
+
+.dn , .data{
+    background:#6B99C3;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100px;
+}
+.para{
+    background:#D2D2D4;
+    font-weight: bold;
+    font-size: 20px;
+    width:50px;
+}
+.nz_para{
+    background:#E4E5EA;
+}
+h4{
+    text-align: center;
+}
