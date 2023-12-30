@@ -1,0 +1,162 @@
+/* Загальні стилі */
+body {
+    font-family: 'Tenor Sans', sans-serif;
+    margin: 0 ;
+    padding: 0;
+}
+
+.container {
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+    background:#ffffff;
+    /*border: 1px #131410 solid;*/
+}
+
+/* Стилі для навігації */
+nav ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+    background-color:#81BECE;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+nav li {
+    margin: 0 ; 
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color:#012E4A;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Стилі для заголовка */
+header {
+    text-align: center;
+    
+    height:150px;
+    margin: 0;
+    padding: 0;
+    border: 1px #ffffff solid;  
+}
+.me_header{
+    height:100px;
+}
+
+header h1 {
+    font-size:64px;
+    color:#012E4A;
+    font-weight:bold ;
+    letter-spacing:normal;
+    
+}
+
+header h2 {
+    font-size:36px;
+    color: #A66A2C;
+    
+    
+}
+.header_h1{
+    margin:30px;
+}
+
+/* Стилі для блоків */
+.about_me {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.about_me h2{
+    font-size: 24px;
+}
+/*.block_pr{
+    flex: 0 0 auto;
+    width: 300px; 
+    padding:50px;
+    margin:50px; 
+    background-color:#D5AA72;
+    text-align: center;
+    border-radius:20px;
+}
+.block_lb{
+    flex: 0 0 auto;
+    width: 300px; 
+    padding:50px;
+    margin:50px; 
+    background-color:#A66A2C;
+    text-align: center;
+    border-radius:20px;
+}
+*/
+.me-container {
+    display: flex;
+    margin-top:-100px;
+    /*flex-wrap: nowrap;
+    overflow-x: auto; 
+    scrollbar-color: red gray;*/
+}
+
+.block-text-me{
+    flex:center;
+    width:1400px; 
+    height:100px;
+    padding:50px;
+    margin:50px; 
+    background-color:#E8EDE7;
+    text-align: center;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size:22px;
+}
+.text-me{
+    margin-top:0px;
+}
+/* Стилі для футера */
+footer {
+    background: #ffffff;
+    color: #131410;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    margin-top: -80px;
+}
+
+.footer_nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.footer_nav li {
+    margin: 0 10px;
+}
+
+.footer_nav a {
+    text-decoration: none;
+    color: #012E4A;
+}
+
+.social-links a {
+    text-decoration: none;
+    color:#012E4A;
+    margin: 5px;
+}
+
+.social-img {
+    max-width: 100px;
+    vertical-align: middle; 
+}
+.social-img_em{
+    max-width: 100px;
+    vertical-align: middle; 
+    margin-top: -4px;
+}
+
+
